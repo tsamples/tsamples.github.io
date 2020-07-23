@@ -1,6 +1,7 @@
 
 function draw() {
-  document.getElementById('chartJSContainer').innerHTML ='';
+  document.getElementById('canvas-parent').innerHTML ='';
+  document.getElementById('canvas-parent').innerHTML ='<canvas id="chartJSContainer"></canvas>';
   fetch(
     "http://localhost:8080/http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1"
   )
