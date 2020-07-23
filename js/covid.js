@@ -3,7 +3,8 @@ function draw() {
   document.getElementById('canvas-parent').innerHTML ='';
   document.getElementById('canvas-parent').innerHTML ='<canvas id="chartJSContainer"></canvas>';
   fetch(
-    "http://localhost:8080/http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1"
+    //"http://localhost:8080/http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1"
+    "/resources/covid_data.json"
   )
     .then((response) => {
       return response.json();
