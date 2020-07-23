@@ -1,5 +1,6 @@
 
 function draw() {
+  document.getElementById('chartJSContainer').innerHTML ='';
   fetch(
     "http://localhost:8080/http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1"
   )
