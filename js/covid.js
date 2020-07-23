@@ -1,4 +1,18 @@
 
+function selectAllCounties() {
+  var elements = document.querySelectorAll('.counties');
+  for (var i=0; i<elements.length;i++) {
+    elements[i].checked = true;
+  }
+}
+
+function unselectAllCounties() {
+  var elements = document.querySelectorAll('.counties');
+  for (var i=0; i<elements.length;i++) {
+    elements[i].checked = false;
+  }
+
+}
 function draw() {
   document.getElementById('canvas-parent').innerHTML ='';
   document.getElementById('canvas-parent').innerHTML ='<canvas id="chartJSContainer"></canvas>';
