@@ -9,23 +9,23 @@ function draw() {
     .then((data) => {
     
       var soillcounties = [
-        "Franklin",
-        "Hamilton",
-        "Union",
-        "Johnson",
-        "Pulaski",
-        "Williamson",
-        "Saline",
-        "Hardin",
-        "Pope",
-        "White",
-        "Perry",
-        "Massac",
-        "Gallatin",
-        "Randolph",
-        "Jefferson",
-        "Jackson",
-        "Alexander"
+        //"Franklin",
+        //"Hamilton",
+        //"Union",
+        //"Johnson",
+        //"Pulaski",
+        //"Williamson",
+        //"Saline",
+        //"Hardin",
+        //"Pope",
+        //"White",
+        //"Perry",
+        //"Massac",
+        //"Gallatin",
+        //"Randolph",
+        //"Jefferson",
+        //"Jackson",
+        //"Alexander"
         //"St. Clair",
         //"Monroe",
         //"Washington",
@@ -37,6 +37,12 @@ function draw() {
         //"Edwards",
         //"Wabash"
       ];
+
+      var elements = document.querySelectorAll("#counties input:checked");
+      for (var i=0; i<elements.length;i++) {
+        soillcounties.push(elements[i].id);
+      }
+
     
     
       /*single County Use */
