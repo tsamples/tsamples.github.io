@@ -261,9 +261,9 @@ function draw() {
       if (document.getElementById('sevendaydailyCaseDataSet').checked) {
         datasets.push(sevendaydailyCaseDataSet);
       }
-      if (document.getElementById('dailyTestDataSet').checked) {
-        datasets.push(dailyTestDataSet);
-      }
+      //if (document.getElementById('dailyTestDataSet').checked) {
+       // datasets.push(dailyTestDataSet);
+      //}
       if (document.getElementById('dailyTPRDataSet').checked) {
         datasets.push(dailyTPRDataSet);
       }
