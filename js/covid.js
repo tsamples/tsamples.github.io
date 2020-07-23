@@ -11,7 +11,6 @@ function unselectAllCounties() {
   for (var i=0; i<elements.length;i++) {
     elements[i].checked = false;
   }
-
 }
 function draw() {
   document.getElementById('canvas-parent').innerHTML ='';
