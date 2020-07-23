@@ -163,7 +163,7 @@ function draw() {
         dailytpr.push(dailytprfixed);
       }
       //alert(dailytprfixed)
-      console.log(dailytpr);
+      
       var dailyTPRDataSet = {
         label: "Average 7 day Daily Test Positivity Rate",
         data: dailytpr,
@@ -207,7 +207,7 @@ function draw() {
               dailytested[i - 4]   +
               dailytested[i - 5]    +
               dailytested[i - 6]) / 7) / population) * 800) ;
-          console.log(testedperpopulation);
+          
         } else {
           var testedperpopulation = 0;
         }
