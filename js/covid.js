@@ -4,6 +4,7 @@ function selectAllCounties() {
   for (var i=0; i<elements.length;i++) {
     elements[i].checked = true;
   }
+  draw();
 }
 
 function unselectAllCounties() {
@@ -11,6 +12,7 @@ function unselectAllCounties() {
   for (var i=0; i<elements.length;i++) {
     elements[i].checked = false;
   }
+  draw();
 }
 function draw() {
   var dateControl = document.querySelector('input[type="date"]');
