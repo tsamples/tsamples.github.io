@@ -5,8 +5,25 @@
 </head>
 
 <body>
-    <input type="Checkbox" name="" ><label># of Deaths per day</label></input>
-    <input type="Checkbox" name="" ><label># of 7 Day averaged Daily Cases</label></input>
+    <input type="Checkbox" id="cumDeathDataSet" ><label>Cumulative Deaths</label></input>
+    <input type="Checkbox" id="newDeathDataSet" ><label>Deaths Per Day</label></input>
+
+    <input type="Checkbox" id="cumCaseDataSet" ><label>Cumulative Cases</label></input>
+    <input type="Checkbox" id="dailyCaseDataSet" ><label>Cases Per Day</label></input>
+
+
+    <input type="Checkbox" id="sevendaydailyCaseDataSet" ><label>7 Day Averaged Cases Per Day</label></input>
+
+    <input type="Checkbox" id="dailyTestDataSet" ><label>Tests Per Day</label></input>
+
+    <input type="Checkbox" id="dailyTPRDataSet" ><label>Test Positivty Rate Per Day</label></input>
+
+    <input type="Checkbox" id="sevendaydailyTestDataSet" ><label>7 Day Averaged Tests Per Day</label></input>
+
+
+    //datasets.push(testedperpopulationDataSet);
+
+
     <canvas id="chartJSContainer"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
     <script src="/js/covid.js"></script>
