@@ -38,7 +38,7 @@ function draw() {
         //"Wabash"
       ];
 
-      var elements = document.querySelectorAll("#counties input:checked");
+      var elements = document.querySelectorAll(".counties input:checked");
       for (var i=0; i<elements.length;i++) {
         soillcounties.push(elements[i].id);
       }
