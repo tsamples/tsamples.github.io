@@ -239,10 +239,10 @@ function draw() {
       };
       var datasets = [];
       //datasets.push(cumDeathDataSet);
-      //datasets.push(newDeathDataSet)
+      datasets.push(newDeathDataSet)
       // alert(JSON.stringify(cumCaseDataSet));
       //datasets.push(cumCaseDataSet)
-      //alert(JSON.stringify(dailyTestDataSet));
+      
       //datasets.push(dailyCaseDataSet)
       datasets.push(sevendaydailyCaseDataSet);
       //datasets.push(dailyTestDataSet);
