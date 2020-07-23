@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <div id="counties">
+    <div id="counties" style="width:30%">
         <input checked onChange="draw()" type="Checkbox" id="Franklin" ><label>Franklin</label></input><br />
         <input checked onChange="draw()" type="Checkbox" id="Hamilton" ><label>Hamilton</label></input><br />
         <input checked onChange="draw()" type="Checkbox" id="Union" ><label>Union</label></input><br />
@@ -25,23 +25,23 @@
         <input checked onChange="draw()" type="Checkbox" id="Alexander" ><label>Alexander</label></input><br />
     </div>
 
+    <div id="charts">
+        <input onChange="draw()" type="Checkbox" id="cumDeathDataSet" ><label>Cumulative Deaths</label></input><br />
+        <input checked onChange="changeFlag()"  type="Checkbox" id="newDeathDataSet" ><label>Deaths Per Day</label></input><br />
 
-    <input onChange="draw()" type="Checkbox" id="cumDeathDataSet" ><label>Cumulative Deaths</label></input>
-    <input checked onChange="changeFlag()"  type="Checkbox" id="newDeathDataSet" ><label>Deaths Per Day</label></input>
-
-    <input onChange="draw()"  type="Checkbox" id="cumCaseDataSet" ><label>Cumulative Cases</label></input>
-    <input onChange="draw()"  type="Checkbox" id="dailyCaseDataSet" ><label>Cases Per Day</label></input>
-
-
-    <input checked onChange="draw()"  type="Checkbox" id="sevendaydailyCaseDataSet" ><label>7 Day Averaged Cases Per Day</label></input>
-
-    <!--<input onChange="draw()"  type="Checkbox" id="dailyTestDataSet" ><label>Tests Per Day</label></input>-->
-
-    <input onChange="draw()"  type="Checkbox" id="dailyTPRDataSet" ><label>Test Positivty Rate Per Day</label></input>
-
-    <input onChange="draw()"  type="Checkbox" id="sevendaydailyTestDataSet" ><label>7 Day Averaged Tests Per Day</label></input>
+        <input onChange="draw()"  type="Checkbox" id="cumCaseDataSet" ><label>Cumulative Cases</label></input><br />
+        <input onChange="draw()"  type="Checkbox" id="dailyCaseDataSet" ><label>Cases Per Day</label></input><br />
 
 
+        <input checked onChange="draw()"  type="Checkbox" id="sevendaydailyCaseDataSet" ><label>7 Day Averaged Cases Per Day</label></input><br />
+
+        <!--<input onChange="draw()"  type="Checkbox" id="dailyTestDataSet" ><label>Tests Per Day</label></input><br />-->
+
+        <input onChange="draw()"  type="Checkbox" id="dailyTPRDataSet" ><label>Test Positivty Rate Per Day</label></input><br />
+
+        <input onChange="draw()"  type="Checkbox" id="sevendaydailyTestDataSet" ><label>7 Day Averaged Tests Per Day</label></input><br />
+
+    </div>
     
 
 
