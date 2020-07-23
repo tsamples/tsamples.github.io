@@ -5,23 +5,23 @@
 </head>
 
 <body>
-    <input type="Checkbox" id="cumDeathDataSet" ><label>Cumulative Deaths</label></input>
-    <input type="Checkbox" id="newDeathDataSet" ><label>Deaths Per Day</label></input>
+    <input onChange="draw()" type="Checkbox" id="cumDeathDataSet" ><label>Cumulative Deaths</label></input>
+    <input checked onChange="changeFlag()"  type="Checkbox" id="newDeathDataSet" ><label>Deaths Per Day</label></input>
 
-    <input type="Checkbox" id="cumCaseDataSet" ><label>Cumulative Cases</label></input>
-    <input type="Checkbox" id="dailyCaseDataSet" ><label>Cases Per Day</label></input>
-
-
-    <input type="Checkbox" id="sevendaydailyCaseDataSet" ><label>7 Day Averaged Cases Per Day</label></input>
-
-    <input type="Checkbox" id="dailyTestDataSet" ><label>Tests Per Day</label></input>
-
-    <input type="Checkbox" id="dailyTPRDataSet" ><label>Test Positivty Rate Per Day</label></input>
-
-    <input type="Checkbox" id="sevendaydailyTestDataSet" ><label>7 Day Averaged Tests Per Day</label></input>
+    <input onChange="draw()"  type="Checkbox" id="cumCaseDataSet" ><label>Cumulative Cases</label></input>
+    <input onChange="draw()"  type="Checkbox" id="dailyCaseDataSet" ><label>Cases Per Day</label></input>
 
 
-    //datasets.push(testedperpopulationDataSet);
+    <input checked onChange="draw()"  type="Checkbox" id="sevendaydailyCaseDataSet" ><label>7 Day Averaged Cases Per Day</label></input>
+
+    <input onChange="draw()"  type="Checkbox" id="dailyTestDataSet" ><label>Tests Per Day</label></input>
+
+    <input onChange="draw()"  type="Checkbox" id="dailyTPRDataSet" ><label>Test Positivty Rate Per Day</label></input>
+
+    <input onChange="draw()"  type="Checkbox" id="sevendaydailyTestDataSet" ><label>7 Day Averaged Tests Per Day</label></input>
+
+
+    
 
 
     <canvas id="chartJSContainer"></canvas>

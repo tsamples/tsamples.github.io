@@ -1,3 +1,28 @@
+function changeFlag(){
+
+    if (document.getElementById('cumDeathDataSet').checked) {
+        datasets.push(cumDeathDataSet);
+      }
+      if (document.getElementById('newDeathDataSet').checked) {
+        datasets.push(newDeathDataSet)
+      }
+      if (document.getElementById('cumCaseDataSet').checked) {
+        datasets.push(cumCaseDataSet)
+      }
+      if (document.getElementById('dailyCaseDataSet').checked) {
+        datasets.push(dailyCaseDataSet)
+      }
+      if (document.getElementById('sevendaydailyCaseDataSet').checked) {
+        datasets.push(sevendaydailyCaseDataSet);
+      }
+      if (document.getElementById('dailyTestDataSet').checked) {
+        datasets.push(dailyTestDataSet);
+      }
+      if (document.getElementById('dailyTPRDataSet').checked) {
+        datasets.push(dailyTPRDataSet);
+      }
+
+}
 function draw() {
   fetch(
     "http://localhost:8080/http://dph.illinois.gov/sitefiles/COVIDHistoricalTestResults.json?nocache=1"
@@ -238,16 +263,31 @@ function draw() {
         data: sevendaycasedata
       };
       var datasets = [];
-      //datasets.push(cumDeathDataSet);
-      datasets.push(newDeathDataSet)
-      // alert(JSON.stringify(cumCaseDataSet));
-      //datasets.push(cumCaseDataSet)
-      
-      //datasets.push(dailyCaseDataSet)
-      datasets.push(sevendaydailyCaseDataSet);
-      //datasets.push(dailyTestDataSet);
-      //datasets.push(dailyTPRDataSet);
+
+      if (document.getElementById('cumDeathDataSet').checked) {
+        datasets.push(cumDeathDataSet);
+      }
+      if (document.getElementById('newDeathDataSet').checked) {
+        datasets.push(newDeathDataSet)
+      }
+      if (document.getElementById('cumCaseDataSet').checked) {
+        datasets.push(cumCaseDataSet)
+      }
+      if (document.getElementById('dailyCaseDataSet').checked) {
+        datasets.push(dailyCaseDataSet)
+      }
+      if (document.getElementById('sevendaydailyCaseDataSet').checked) {
+        datasets.push(sevendaydailyCaseDataSet);
+      }
+      if (document.getElementById('dailyTestDataSet').checked) {
+        datasets.push(dailyTestDataSet);
+      }
+      if (document.getElementById('dailyTPRDataSet').checked) {
+        datasets.push(dailyTPRDataSet);
+      }
       //datasets.push(sevendaydailyTestDataSet);
+      
+      
       //datasets.push(testedperpopulationDataSet);
       var options = {
         type: "line",
