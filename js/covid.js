@@ -270,7 +270,10 @@ function draw() {
       if (document.getElementById('dailyTPRDataSet').checked) {
         datasets.push(dailyTPRDataSet);
       }
-      //datasets.push(sevendaydailyTestDataSet);
+      if (document.getElementById('sevendaydailyTestDataSet').checked) {
+        datasets.push(sevendaydailyTestDataSet);
+      }      
+      
       
       
       //datasets.push(testedperpopulationDataSet);
