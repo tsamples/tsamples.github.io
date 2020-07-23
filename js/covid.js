@@ -1,13 +1,13 @@
 
 function selectAllCounties() {
-  var elements = document.querySelectorAll('.counties');
+  var elements = document.querySelectorAll('.counties input');
   for (var i=0; i<elements.length;i++) {
     elements[i].checked = true;
   }
 }
 
 function unselectAllCounties() {
-  var elements = document.querySelectorAll('.counties');
+  var elements = document.querySelectorAll('.counties input');
   for (var i=0; i<elements.length;i++) {
     elements[i].checked = false;
   }
