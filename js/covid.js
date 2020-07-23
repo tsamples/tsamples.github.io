@@ -13,6 +13,9 @@ function unselectAllCounties() {
   }
 }
 function draw() {
+  var dateControl = document.querySelector('input[type="date"]');
+  var startdate = dateControl.value;
+  
   document.getElementById('canvas-parent').innerHTML ='';
   document.getElementById('canvas-parent').innerHTML ='<canvas id="chartJSContainer"></canvas>';
   fetch(
@@ -114,7 +117,13 @@ function draw() {
             dailytesteddata += historicalData[i].values[j].dailytests;
           }
         }
-        if (new Date(historicalData[i].testDate).getTime() > new Date('6/1/2020').getTime()) {
+        if (startdate == undefined || startdate == '') {
+            datetypestartdate = new Date('6/1/2020');
+            dateControl.value = '2020-06-01';
+        } else {
+          datetypestartdate = new Date(startdate);
+        }
+        if (new Date(historicalData[i].testDate).getTime() > datetypestartdate.getTime()) {
           newDeathData.push(totalSOILLCountForDate);
           cumDeathDataArr.push(cumdeathdata);
           newCaseData.push(caseCount);

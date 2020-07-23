@@ -15,6 +15,10 @@
         <div id="buttons" style="margin-top:20px">
             <button onClick="selectAllCounties()">Select All</button>
             <button style="margin-left:5px" onClick="unselectAllCounties()">Unselect All</button>
+            <div style="margin-top:5px;">
+                <label style="font-weight:bold;float:left;padding-top:5px;margin-right:10px;">Start Date</label>
+                <input onChange="draw()" id="datecontrol" type="date"></input>
+            </div>
         </div>
     </div>
     <div id="counties2" class="counties" style="width:15%;float:left;">
